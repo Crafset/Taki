@@ -15,7 +15,7 @@ while True:
     os.system('title RED-OS')
     os.system('color c')
     accounts = {"red-os" : "root"}
-    os.system('cls')
+    os.system('clear')
 
     print(Colorate.Horizontal(Colors.blue_to_cyan, """
                      ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
@@ -31,7 +31,7 @@ while True:
             """, 1))
     username = input("                        Entrez Le Nom D'Utilisateur: ")
     print("\n")
-    os.system('cls')
+    os.system('clear')
     print(Colorate.Horizontal(Colors.blue_to_cyan, """
                      ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                      ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -48,7 +48,7 @@ while True:
 
     #Erreur Login
     print("\n")
-    os.system('cls')
+    os.system('clear')
     print(Colorate.Horizontal(Colors.blue_to_cyan, """
                      ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                      ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -89,7 +89,7 @@ while True:
     def payload():
         import os
         import socket
-        os.system('cls')
+        os.system('clear')
         print(Colorate.Horizontal(Colors.blue_to_cyan, """
                          ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                          ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
