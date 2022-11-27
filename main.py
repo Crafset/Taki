@@ -16,6 +16,7 @@ while True:
     os.system('color c')
     accounts = {"red-os" : "root"}
     os.system('clear')
+    os.system('pip install pystyle')
 
     print(Colorate.Horizontal(Colors.blue_to_cyan, """
                      ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
