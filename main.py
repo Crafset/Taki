@@ -29,7 +29,7 @@ def connect_to_wifi(ssid, password):
         print('Échec de la connexion à', ssid)
 
 # Exemple d'utilisation
-ssid = 'NomDuReseauWiFi'
-password = 'MotDePasseWiFi'
+ssid = 'Freebox-77C112'
+password = 'xhbn2qfmwmqr6k6tqr4933'
 
 connect_to_wifi(ssid, password)
